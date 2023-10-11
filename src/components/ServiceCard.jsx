@@ -1,29 +1,32 @@
 import PropTypes from 'prop-types'
 
-const ServiceCard = ({ service }) => {
-    const { title, image, description } = service
+
+function ServiceCard({service}) {
+    const {title, description, image} = service;
     return (
-        <div className='relative hover:scale-110 hover:opacity-80 duration-200 ease-linear w-[30%] h-[50%] rounded-lg text-white'>
-            <div>
-                <img src={image} className="w-full rounded-lg brightness-[30%] h-full object-contain" alt="" />
+        <div className="relative h-fit w-[90%] lg:w-[30%] rounded-lg hover:opacity-60 duration-150 ease-linear hover:scale-105 cursor-pointer drop-shadow-lg">
+            <img
+                src={image}
+                alt="AirMax Pro"
+                className="z-0 h-full w-full rounded-md object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+            <div className="absolute bottom-4 left-4 text-left">
+                <h1 className="text-xl font-bold text-white">{title}</h1>
+                <p className="mt-2 text-sm text-gray-300">
+                    {description}
+                </p>
+                <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white underline hover:text-red-500">
+                    Explore &rarr;
+                </button>
             </div>
-            <div className='absolute top-10 px-5'>
-                <div className="flex flex-col space-y-8 justify-between"> <h1 className="text-3xl font-extrabold">{title}</h1>
-                <p className="bg-white/10 leading-8  text-lg font-medium mt-2 p-2 rounded-lg">{description}</p>
-               <div>
-                <button className="text-lg bg-transparent hover:text-red-500 underline font-bold">Explore</button>
-            </div>
-                </div>
-               
-           
-            </div>
-        
         </div>
     )
 }
+
 
 ServiceCard.propTypes = {
     service: PropTypes.object.isRequired
 }
 
-export default ServiceCard
+export default ServiceCard;
