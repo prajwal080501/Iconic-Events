@@ -1,12 +1,12 @@
 import { menuItems } from "../data/data"
 import PropTypes from 'prop-types'
+import Logo from "./Logo"
 const Navbar = () => {
 
     return (
         <nav className='absolute z-10 w-screen py-6 top-0 flex items-center justify-between px-8 lg:justify-evenly'>
-            <div>
-                <h1 className='text-4xl text-white font-extrabold'>Iconic<span className="text-blue-500 ">Events</span></h1>
-            </div>
+           {/* logo */}
+           <Logo />
             <div className="hidden md:inline-block">
                 <ul className='flex justify-center'>
                     {menuItems.map((item) => (
