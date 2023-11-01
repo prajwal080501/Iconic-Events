@@ -5,11 +5,11 @@ const Hero = () => {
         <div className='relative h-screen'>
             <video className="absolute inset-0 object-cover w-full h-full brightness-[20%]"  src={video} autoPlay loop muted></video>
             <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center flex flex-col space-y-5">
-                    <p className="text-5xl font-bold text-white tracking-wider">
+                <div className="text-center mt-10 lg:mt-0 flex flex-col space-y-5">
+                    <p className="text-3xl lg:text-5xl font-bold text-white tracking-wider">
                         Crafting Moments, Creating Memories.
                     </p>
-                    <p className="w-1/2 mx-auto tracking-wider leading-normal text-3xl font-bold text-gray-400">
+                    <p className="w-[90%] lg:w-1/2 mx-auto tracking-wider leading-normal text-xl lg:text-3xl font-bold text-gray-400">
                     Transforming Your Events into Unforgettable Experiences
                     </p>
                     <div>

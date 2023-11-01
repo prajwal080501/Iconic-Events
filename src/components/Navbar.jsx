@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="hidden md:inline-block">
                 <ul className='flex justify-center'>
                     {menuItems.map((item) => (
-                        <a href="services" key={item.id} className='mx-5 text-lg font-bold hover:bg-white hover:text-black cursor-pointer px-3 py-2 rounded-lg duration-200 transition-all text-white uppercase'>
+                        <a href={`#${item.name.toLowerCase()}`} key={item.id} className='mx-5 text-lg font-bold hover:bg-white hover:text-black cursor-pointer px-3 py-2 rounded-lg duration-200 transition-all text-white uppercase'>
                             {item.name}
                         </a>
                     ))}

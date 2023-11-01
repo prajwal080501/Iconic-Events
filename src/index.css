@@ -8,9 +8,9 @@
 
 html, body,
 :root {
-    height: 100%;
+    height: fit-content;
     font-family: 'Nunito', sans-serif;
-
+    scroll-behavior: smooth;
     /* hide scrollbar */
     scrollbar-width: none;
    
@@ -18,4 +18,10 @@ html, body,
 
 ::webkit-scrollbar {
     display: none;
+}
+
+@layer components {
+    .input {
+        @apply bg-red-100/80 p-3 rounded-md text-lg font-medium
+    }
 }

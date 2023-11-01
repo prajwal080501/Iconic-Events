@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import SectionContainer from "./components/SectionContainer";
@@ -22,7 +23,9 @@ function App() {
       <SectionContainer title="About Us" >
         <About />
       </SectionContainer>
-      <SectionContainer title="Testimonials" ></SectionContainer>
+      <SectionContainer title="Contact Us" >
+        <Contact />
+      </SectionContainer>
 
     </div>
   )
