@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function ServiceCard({service}) {
     const {title, description, image} = service;
     return (
-        <div className="relative h-fit w-[90%] lg:w-[30%] rounded-lg hover:opacity-60 duration-150 ease-linear hover:scale-105 cursor-pointer drop-shadow-lg">
+        <div className="relative h-fit w-[95%] lg:w-[30%] rounded-lg hover:opacity-60 duration-150 ease-linear hover:scale-105 cursor-pointer drop-shadow-lg">
             <img
                 src={image}
                 alt="AirMax Pro"

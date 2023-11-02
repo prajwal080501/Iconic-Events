@@ -22,7 +22,7 @@ const Navbar = () => {
             </div>
             </div>
             <div>
-                <button className="bg-fuchsia-600 rounded-md hover:bg-purple-600 duration-200 ease-linear hover:scale-105 text-white font-bold text-base lg:text-lg px-2 py-2 ">Contact Us</button>
+                <button className="bg-fuchsia-600 rounded-md hover:bg-purple-600 duration-200 ease-linear hover:scale-105 text-white font-bold text-sm lg:text-lg px-2 py-2 ">Contact Us</button>
             </div>
         </nav>
     )
